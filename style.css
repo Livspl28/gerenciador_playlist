@@ -1,0 +1,86 @@
+body{
+    background: #1d0101;
+}
+/* CABEÇALHO */
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0;
+    gap: 15px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #4F0E0E;
+    z-index: 1000;
+}
+
+/* Itens */
+li {
+    position: relative; /* importante pro dropdown */
+
+}
+
+
+/* LINKS */
+li a,
+.dropbtn {
+    display: block;
+    color: #ffffff;
+    padding: 10px 18px;
+    text-decoration: none;
+    text-align: center;
+    font-family:"Oxanium", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* Hover */
+li a:hover,
+.dropdown:hover .dropbtn {
+    background: #7E2929;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.tabela_musicas {
+    background-color: #7E2929;
+    border-collapse: collapse;
+    width: 900px;
+    margin: 40px auto;
+    text-align: center;
+
+    font-family: "Oxanium", sans-serif;
+    color:  #f1aaa9;
+    font-size: 20px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+.tabela_musicas th {
+    background-color: #4F0E0E;
+    padding: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Células */
+.tabela_musicas td {
+    border-bottom: 1px solid #4F0E0E;
+    padding: 10px;
+
+    font-family: "Oxanium", sans-serif;
+    color: #f1aaa9;
+}
+
+/* Hover */
+.tabela_musicas tr:hover {
+    background-color: #C3423F;
+    transition: 0.3s;
+}
