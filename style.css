@@ -84,3 +84,75 @@ li a:hover,
     background-color: #C3423F;
     transition: 0.3s;
 }
+
+.tabela_musicas tr:nth-child(even) {
+    background-color: #6b2424;
+}
+
+/*Caixa de cadastro*/
+.cadbox {
+    width: 450px;
+    height: 750px;
+    background-color: #6EA4BF;
+    padding: 70px;
+    box-sizing: border-box;
+    border-radius: 10%;
+
+    margin: 120px auto; /* centraliza */
+}
+
+/*Profile icon*/
+.pfpcad {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 30%;
+    margin-left: 10%;
+    margin-top: -70px;
+}
+
+/*Botão de enviar*/
+.buttoncad2 {
+    font-family: "sora", sans-serif;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: -1;
+    margin-top: -200px;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: #BF8DAC;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    
+}
+
+/*Formulário*/
+.formcad {
+    margin-left: -51px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 125%;
+    height: 100%;
+}
+
+.formcad input {
+    padding: 15px;
+    border: 1px solid #fcfcfc;
+    border-radius: 15px;
+}
+
+.formcad input:focus {
+    border-color:#BF8DAC;
+    outline: none;
+}
+
+.formcad input::placeholder {
+    color: #9e9a9a;
+}
+
