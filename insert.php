@@ -1,3 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Palette+Mosaic&family=Wellfleet&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <title>Minhas Músicas</title>
+</head>
+<body>
+    
+    <main>
+        <!--Caixa do cadastro-->
+        <section class="cadbox">
+            <div class="pfpcad">
+                <img src="./imagens/icon.png" class="perfil">
+            </div>
+
+            <!--Formulário-->
+            <form action="cadastro.php" method="POST">
+                <div class="formcad">
+                    <input type="text" placeholder="Nome" name="nome" />
+                    <input type="text" placeholder="Descricao" name="descricao" />
+                    <input type="text" placeholder="Categoria" name="categoria" />
+                
+                </div>
+                <button type="submit" class="buttoncad2">Envie</button>
+            </form>
+
+            <!--Botão de cadastro-->
+            
+        </section>
+        
+    </main>
+</body>
+
+
 <?php
 require_once 'crud.php';
 
@@ -5,7 +45,7 @@ $novaMusica = [
     'titulo' => 'Numb',
     'artista' => 'Linkin park',
     'album' => 'Meteora',
-    'genero' => Rock,
+    'genero' => 'Rock'
 ];
 
 $idMusicaNova = create($pdo, 'musica', $novaMusica);
